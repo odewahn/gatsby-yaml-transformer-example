@@ -1,0 +1,18 @@
+- name: Kotlin Test
+  courseId: odewahn/kotlin-test
+  author: Ken Kousens
+  slug: kotlin-test
+  description: >
+    Kotlin is a cool new language that has all sorts of good things about it. It has nothing to do with CNI, but it was the first thing I did in Katacoda.
+- name: Introduction to FaaS
+  courseId: javajon/somthing
+  author: Jonathan Johnson
+  slug: introduction-to-faas
+  description: >
+    In this first scenario, you'll take the role of Jane, a developer who needs to deploy a new Key-Value Store for an application she's working with. After discussions, it's been decided to use Redis, a popular KV Store.
+- name: Docker Introduction
+  courseId: javajon/somthing
+  author: Ben Hall
+  slug: introduction-to-docker
+  description: >
+    If you love Docker and you know it clap your hands.
