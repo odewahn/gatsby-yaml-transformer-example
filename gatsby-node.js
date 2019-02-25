@@ -7,11 +7,6 @@ exports.createPages = ({ graphql, actions }) => {
       allTutorialsYaml {
         edges {
           node {
-            id
-            name
-            courseId
-            author
-            description
             slug
           }
         }
@@ -19,11 +14,12 @@ exports.createPages = ({ graphql, actions }) => {
     }
   `).then(result => {
     result.data.allTutorialsYaml.edges.forEach(({ node }) => {
+      console.log(node)
       createPage({
         path: node.slug,
         component: path.resolve(`./src/pages/course-detail.js`),
         context: {
-          ...node,
+          slug: node.slug,
         },
       })
     })
